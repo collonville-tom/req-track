@@ -1,0 +1,27 @@
+Requirement-Tracking-core Software Requirements Specification
+
+* Liste des focntionnalités principales
+
+** @req SRS_REQUIREMENT_TRACKING_CORE_010
+
+  Le composant fournit une API pour analyser les exigences 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_070, SRS_REQUIREMENT_TRACKING_080
+        
+** @req SRS_REQUIREMENT_TRACKING_CORE_020
+
+  Le composant fournit un metamodele de graph sur les elements des exigences et leurs relation.  
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_010, SRS_REQUIREMENT_TRACKING_050, SRS_REQUIREMENT_TRACKING_060, SRS_REQUIREMENT_TRACKING_070, SRS_REQUIREMENT_TRACKING_080, SRS_REQUIREMENT_TRACKING_090
+        
+** @req SRS_REQUIREMENT_TRACKING_CORE_030
+
+  Le composant fournit une API pour analyser les relations entre les elements des exigences 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_010, SRS_REQUIREMENT_TRACKING_050, SRS_REQUIREMENT_TRACKING_060, SRS_REQUIREMENT_TRACKING_090

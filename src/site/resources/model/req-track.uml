@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_hoAGAD94EeSOvtmJOYYJnA" name="NewModel">
+  <packagedElement xmi:type="uml:Component" xmi:id="_v7I0cD94EeSOvtmJOYYJnA" name="tc-requirement-tracking-validator-maven-plugin">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_sqgUsD95EeSOvtmJOYYJnA" name="&lt;&lt;dependency>>" client="_v7I0cD94EeSOvtmJOYYJnA" supplier="_FEX4AD95EeSOvtmJOYYJnA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_tUoPwD95EeSOvtmJOYYJnA" name="&lt;&lt;dependency>>" client="_v7I0cD94EeSOvtmJOYYJnA" supplier="_C5D3AD95EeSOvtmJOYYJnA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_t0dmYD95EeSOvtmJOYYJnA" name="&lt;&lt;dependency>>" client="_v7I0cD94EeSOvtmJOYYJnA" supplier="_G4XlMD95EeSOvtmJOYYJnA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_uXT0wD95EeSOvtmJOYYJnA" name="&lt;&lt;dependency>>" client="_v7I0cD94EeSOvtmJOYYJnA" supplier="_AoKLYD95EeSOvtmJOYYJnA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_AoKLYD95EeSOvtmJOYYJnA" name="tc-osgi-bundle-requirement-tracking-maven-site">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_irZx0D96EeSOvtmJOYYJnA" name="&lt;&lt;dependency>>" client="_AoKLYD95EeSOvtmJOYYJnA" supplier="_G4XlMD95EeSOvtmJOYYJnA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_C5D3AD95EeSOvtmJOYYJnA" name="tc-osgi-bundle-requirement-tracking-apt-connector">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_jwHXID96EeSOvtmJOYYJnA" name="&lt;&lt;dependency>>" client="_C5D3AD95EeSOvtmJOYYJnA" supplier="_G4XlMD95EeSOvtmJOYYJnA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_FEX4AD95EeSOvtmJOYYJnA" name="tc-osgi-bundle-requirement-tracking-java-connector">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_nIfoMD96EeSOvtmJOYYJnA" name="&lt;&lt;dependency>>" client="_FEX4AD95EeSOvtmJOYYJnA" supplier="_G4XlMD95EeSOvtmJOYYJnA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_G4XlMD95EeSOvtmJOYYJnA" name="tc-osgi-bundle-requirement-tracking-m2"/>
+</uml:Model>

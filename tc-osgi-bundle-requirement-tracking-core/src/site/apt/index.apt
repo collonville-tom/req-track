@@ -1,0 +1,3 @@
+Introduction
+
+   Composant modelisation le metamodele simplifié d'une structure a exigence. Cela a pour but de construire un graph avec les elements intriseques des exigences afin de permettent des traitement d'analyse par exeple la tracablité, la coherence des version, etc.

@@ -1,0 +1,19 @@
+Requirement-tracking-core Software Design Description
+
+* Liste des composants participant
+
+** @req SDD_REQUIREMENT_TRACKING_CORE_010
+
+  Le composant fournit une classe abstraite pour analyser les exigences AbstractRequirementAnalyser et les graphes d'exigences AbstractTrackingGraphVisitor
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_CORE_010, SRS_REQUIREMENT_TRACKING_CORE_030
+        
+** @req SDD_REQUIREMENT_TRACKING_CORE_020
+
+  Le composant fournit un metamodele de graph sur les elements des exigences et leurs relation.  
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_CORE_020

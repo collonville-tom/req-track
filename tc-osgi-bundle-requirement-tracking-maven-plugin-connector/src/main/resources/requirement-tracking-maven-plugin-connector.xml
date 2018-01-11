@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ConfigurationLibrary
+	xmlns="http://collonville.thomas.fr/tc-osgi-bundle-utils/config-file-schema">
+	<configFiles>
+		<defaultValue>24681</defaultValue>
+		<valueType>java.lang.String</valueType>
+		<fieldName>rmiPort</fieldName>
+		<className>org.tc.osgi.bundle.requirement.tracking.maven.plugin.connector.rpc.MavenPluginRPCServer</className>
+	</configFiles>
+	<configFiles>
+		<defaultValue>localhost</defaultValue>
+		<valueType>java.lang.String</valueType>
+		<fieldName>rmiAddr</fieldName>
+		<className>org.tc.osgi.bundle.requirement.tracking.maven.plugin.connector.rpc.MavenPluginRPCServer</className>
+	</configFiles>
+	<configFiles>
+		<defaultValue>tc-osgi-bundle-requirement-tracking-apt-connector</defaultValue>
+		<valueType>java.lang.String</valueType>
+		<fieldName>aptConnectorDependencyBundleName</fieldName>
+		<className>org.tc.osgi.bundle.requirement.tracking.maven.plugin.connector.module.tracker.AptRequirementBuilderServiceTracker</className>
+	</configFiles>
+	<configFiles>
+		<defaultValue>tc-osgi-bundle-requirement-tracking-core</defaultValue>
+		<valueType>java.lang.String</valueType>
+		<fieldName>coreTraqReqDependencyBundleName</fieldName>
+		<className>org.tc.osgi.bundle.requirement.tracking.maven.plugin.connector.module.tracker.GraphBuilderServiceTracker</className>
+	</configFiles>
+	<configFiles>
+		<defaultValue>tc-osgi-bundle-requirement-tracking-repport</defaultValue>
+		<valueType>java.lang.String</valueType>
+		<fieldName>repportTraqReqDependencyBundleName</fieldName>
+		<className>org.tc.osgi.bundle.requirement.tracking.maven.plugin.connector.module.tracker.RequirementRepportServiceTracker</className>
+	</configFiles>
+</ConfigurationLibrary>

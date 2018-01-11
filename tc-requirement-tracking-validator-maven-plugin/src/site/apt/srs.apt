@@ -1,0 +1,23 @@
+Requirement-Tracking-validator-maven-plugin Software Requirements Specification
+
+* Liste des focntionnalités principales
+
+** @req SRS_REQUIREMENT_TRACKING_VALIDATOR_MAVEN_PLUGIN_010
+
+  Le composant permet l'analyse des exigences au sein du processus maven
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_050
+        
+** @req SRS_REQUIREMENT_TRACKING_VALIDATOR_MAVEN_PLUGIN_020
+
+  Le composant realise la compilation des activités d'extracion des exigences, de la construction du graphe des exigences et la generation des differentes rapport d'analyse via le service d'analyse contenu dans equinox loader
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_050
+        
+        * @depend SRS_REQUIREMENT_TRACKING_APT_CONNECTOR_010, SRS_REQUIREMENT_TRACKING_JAVA_CONNECTOR_010, SRS_REQUIREMENT_TRACKING_CORE_020, SRS_REQUIREMENT_TRACKING_010
+
+

@@ -1,0 +1,165 @@
+Requirement Tracking  Software Requirements Specification
+
+* Liste des focntionnalités principales
+
+** @req SRS_REQUIREMENT_TRACKING_005
+
+  Le composant definit la nature d'une exigence 
+  
+        * @version 0.1.0
+        
+        * @track SRS_TC_120
+
+** @req SRS_REQUIREMENT_TRACKING_010
+
+  Le composant fourni les fonctionnalitées de suivi des exigences entre projet et leur tracabilité 
+  
+        * @version 0.1.0
+        
+        * @track SRS_TC_120
+        
+** @req SRS_REQUIREMENT_TRACKING_020
+
+  Le composant permet la lecture de fichiers d'exigences inclu dans les fichiers apt 
+  
+        * @version 0.1.0
+        
+        * @track SRS_TC_120
+        
+** @req SRS_REQUIREMENT_TRACKING_030
+
+  Le composant permet la lecture de fichiers d'exigences inclu dans le code source 
+  
+        * @version 0.1.0
+        
+        * @track SRS_TC_120
+        
+** @req SRS_REQUIREMENT_TRACKING_040
+
+  Le composant permet la generation de page site maven quel que soit le type d'exigence defini pour chaque projet
+  
+        * @version 0.1.0
+        
+        * @track SRS_TC_120
+        
+** @req SRS_REQUIREMENT_TRACKING_050
+
+  Le composant est capable d'etre trans-projet afin de tracer des exigences entre projets de facon horizontal et vertical  
+  
+        * @version 0.1.0 
+        
+        * @track SRS_TC_120 
+        
+** @req SRS_REQUIREMENT_TRACKING_060
+
+  Le composant fourni le taux de couverture des exigences par projet
+  
+        * @version 0.1.0
+        
+        * @track SRS_TC_120
+ 
+** @req SRS_REQUIREMENT_TRACKING_070
+
+  Le composant fourni les exigences non tracés  
+  
+        * @version 0.1.0
+        
+        * @track SRS_TC_120
+        
+** @req SRS_REQUIREMENT_TRACKING_080
+
+  Le composant identifie les exigences finales (non tracable)  
+  
+        * @version 0.1.0
+        
+        * @track SRS_TC_120
+
+** @req SRS_REQUIREMENT_TRACKING_090
+
+  Le composant pemet de naviger dans les exigences selon la tracabilité
+   
+        * @version 0.1.0
+        
+        * @track SRS_TC_120   
+        
+* IHM
+        
+** @req SRS_REQUIREMENT_TRACKING_100
+
+  Le composant permet l'ajout d'exigence  
+  
+        * @version x.x.x
+        
+        * @track SRS_TC_120
+        
+** @req SRS_REQUIREMENT_TRACKING_110
+
+  Le composant permet de mofifier une exigence  
+  
+        * @version x.x.x 
+        
+        * @track SRS_TC_120
+        
+** @req SRS_REQUIREMENT_TRACKING_120
+
+  Le composant permet la suppression d'une exigence  
+  
+        * @version x.x.x 
+        
+        * @track SRS_TC_120
+        
+** @req SRS_REQUIREMENT_TRACKING_130
+
+  Le composant fourni une interface non indispensable (le connecteur est facultatif des deux cotés du composant) avec le composant task tracking afin d'associer un/des type d'exigence avec une phase de processus  
+  
+        * @version x.x.x 
+        
+        * @track SRS_TC_120
+
+** @req SRS_REQUIREMENT_TRACKING_140
+
+  un type d'exigence peut etre associé a un type de phase du processus de developpement comme produit entrant et/ou sortant (cf composant task tacking)  
+  
+        * @version x.x.x   
+        
+        * @track SRS_TC_120
+        
+** @req SRS_REQUIREMENT_TRACKING_150
+
+  le composant fourni une interface web  
+  
+        * @version x.x.x
+        
+        * @track SRS_TC_120
+        
+** @req SRS_REQUIREMENT_TRACKING_160
+
+  le composant fourni une interface client lourd  
+  
+        * @version x.x.x   
+        
+        * @track SRS_TC_120   
+
+** @req SRS_REQUIREMENT_TRACKING_170
+
+  Le composant permet la lecture/ecriture de fichiers d'exigences tels que les fichiers apt associé a un type de ressources 
+  
+        * @version x.x.x
+        
+        * @track SRS_TC_120   
+        
+** @req SRS_REQUIREMENT_TRACKING_180
+
+  Le composant journalise les differentes versions des exigences 
+  
+        * @version x.x.x
+        
+        * @track SRS_TC_120
+        
+** @req SRS_REQUIREMENT_TRACKING_190
+
+  Le composant sauvegarde les exigences dans un format portable de type xml propre au projet
+  
+        * @version x.x.x
+        
+        * @track SRS_TC_120

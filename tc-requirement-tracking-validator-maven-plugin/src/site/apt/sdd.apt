@@ -1,0 +1,24 @@
+Requirement-Tracking-validator-maven-plugin Software Design Description
+
+* Liste des focntionnalités principales
+
+** @req SDD_REQUIREMENT_TRACKING_VALIDATOR_MAVEN_PLUGIN_010
+
+  Le composant utilise un mojo maven pour s'integrer dans le processus maven avec le mot clef validate
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_VALIDATOR_MAVEN_PLUGIN_010
+        
+** @req SRS_REQUIREMENT_TRACKING_VALIDATOR_MAVEN_PLUGIN_020
+
+  Le composant utilise une interface RMI pour s'interfacer avec le connecteur du systeme d'analyse de exigences mettant en oeuvre des visiteurs definis dans le composant mave-site pour generer les differents rapports d'analyse
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_VALIDATOR_MAVEN_PLUGIN_020
+        
+        * @depend SDD_REQUIREMENT_TRACKING_MAVEN_SITE_010
+
+
+        

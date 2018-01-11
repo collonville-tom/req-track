@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:osgi="http://www.springframework.org/schema/osgi"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+            http://www.springframework.org/schema/osgi
+            http://www.springframework.org/schema/osgi/spring-osgi.xsd">
+
+<!-- CONSUME -->
+    <bean id="javaRequirementBuilderServiceBean" class="org.tc.osgi.bundle.requirement.tracking.m2.java.connector.module.service.impl.JavaRequirementBuilderServiceImpl">
+    	<property name="utilsService" ref="utilsServiceRef"/>
+    	<property name="m2FactoryService" ref="m2FactoryServiceRef"/>
+    </bean>
+<osgi:reference id="m2FactoryServiceRef" interface="org.tc.osgi.bundle.requirement.tracking.m2.module.service.IM2TrackingRequirementFactoryService"/>
+    <osgi:reference id="utilsServiceRef" interface="org.tc.osgi.bundle.utils.module.service.IUtilsService"/>
+    
+    <osgi:service ref="javaRequirementBuilderServiceBean" interface="org.tc.osgi.bundle.requirement.tracking.m2.java.connector.module.service.IJavaRequirementBuilderService"/>
+</beans>

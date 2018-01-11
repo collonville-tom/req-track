@@ -1,0 +1,23 @@
+Requirement-tracking-apt-connector Software Design Description
+
+* Spécifications
+
+** @req SDD_REQUIREMENT_TRACKING_APT_CONNECTOR_010
+
+  Le composant implemente la classe abstraite AbstractRequirementBuilder pour extraire les exigences des fichiers apt 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_APT_CONNECTOR_010
+        
+        * @depend SDD_REQUIREMENT_TRACKING_M2_040
+
+** @req SDD_REQUIREMENT_TRACKING_APT_CONNECTOR_020
+
+  Le composant utilise le composant apt-io pour decoder les fichier apt 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_APT_CONNECTOR_010
+        
+        * @depend SDD_BUNDLE_APT_IO_020        

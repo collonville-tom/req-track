@@ -1,0 +1,62 @@
+Backlog
+
+* attentes
+
+		* Mettre a jour documentation SRS
+		
+		* Mettre a jour documentation SDD
+		
+		* Mettre a jour documentation STP
+		
+		* Mettre a jour documentation index
+		
+		* 0.1.0  faire une relecture des docs faire le point sur les TU et la couverture (voir sonar)
+        
+        * 0.1.0 sonar + parent + design dependance
+
+		* 0.1.0 voir comment se construit le graph et pourquoi il ne marche pas
+		
+		* 0.1.0 une fois les exigences empiler, il peut etre bien de les trimer pour supprimer les elements redondant
+		
+		* 0.1.0 mettre log dans le composant core
+		
+		* 0.1.0 prevoir uyn xslt pour exposer les resutats de traitement de req-tracking
+		
+		* 0.1.0 finir preduction des rapports au moins chaine fonctionnelle de base et xslt pour affichage web dans site maven
+		
+		* 0.1.0 generer diagramme avec dot
+		
+		* 0.1.0 Revoir méta modèle de doc et les associations avec les phase du processus leur relation et leur déclinaison
+		
+		* 0.1.1 faire module pour le calcul de la tracabilité -> doit extraire un liste d'exigence en anomalie -> les finalreq devront etre implementer pour gerer les anaomalie de type exigence non tracé
+		
+		* 0.1.1 faire disagramme de sequence d'appel des composants pour l'execution et repporter diagramme de composant et de classe principaux
+		
+		* 0.2.0 analyser et simplifier code dans la classe JavaRequirementBuilderServiceImpl pour faire un log efficace et interssant evoir extraction exigence apt pour la gestion des erreur de decodage
+		
+		* 0.2.0 approfondir et detailer car les champs tag defini dans le m2 ne sont pas tous employé
+		
+		* 0.2.0 modifier la generation de graph pour que le graph et un code couleur adequat soit en correlation avec les listes d'anomalies.
+		
+		* 0.2.0 voir si un modele de cycle associé aux type des exigences ne peux pas etre aposé (ce sujet est peut etre a relier avec le projet nimble modeling / SPEM)
+		
+		* 0.2.0 prevoir un type d'exigence de type CODE_BLABLA ou DEV_BLABLA
+		
+		* 0.2.0 voir dans la pratique comment regrouper les exigences sur les classe java propre a un projet comme on le fait avec le RequirementGroup qui permet de regrouper les exigences d'un meme fichier apt
+		
+		* 0.2.0 identifier les mode de generation pour les rapport de tracabilité (associé au different type d'exigence ) de type code/STD/SDD/SRS etc, qu'est ec que j'ai voulu dire?
+		
+		* 0.3.0 prevoir une bd pour gerer les changements de version dans le temps (ou pas)il faut mettre en base la structure du pseudo graph des exigences de facon a alimenter le graph au fils des analyses realiser. pour cela il faut associer pour chaque graph un esemble d'exigences et leur evolutions potentielles. comme ca par build on produit qu'un seul projet qui se met a jour a chaque construction. Donc: a chaque build maven, un projet de resultat de type graph est produit ou mis a jour (comme pour sonar). pendant le build, on extrait les exigences des fichiers apt associé a ce projet/fichier 
+		
+* acceptes
+
+* refuses
+
+* historique
+
+        
+		
+		
+	
+
+  

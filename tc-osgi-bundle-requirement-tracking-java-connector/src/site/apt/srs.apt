@@ -1,0 +1,11 @@
+Requirement-Tracking-java-connector Software Requirements Specification
+
+* Spécifications
+
+** @req SRS_REQUIREMENT_TRACKING_JAVA_CONNECTOR_010
+
+  Le composant fourni les fonctionnalitées d'extraction des exigences contenu dans les fichiers java 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_030

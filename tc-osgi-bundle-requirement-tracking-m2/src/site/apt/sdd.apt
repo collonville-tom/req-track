@@ -1,0 +1,97 @@
+Requirement-tracking-m2 Software Design Description
+
+* Spécifications
+
+** @req SDD_REQUIREMENT_TRACKING_M2_010
+
+  Le composant fourni un package contenant les elements d'un modele de definition des exigences 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_M2_010
+        
+** @req SDD_REQUIREMENT_TRACKING_M2_020
+
+  Le composant tilise via une structure composite les elements de modelisation des exigences  
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_M2_020
+        
+        * @depend SDD_REQUIREMENT_TRACKING_M2_010
+        
+** @req SDD_REQUIREMENT_TRACKING_M2_030
+
+  Le composant definit une classe abstraite AbstractRequirementBuilder pour construire des exigences depuis une source quelconque  
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_M2_040
+
+** @req SDD_REQUIREMENT_TRACKING_M2_040
+
+  Le composant utilise une enum pour definir les symboles qui structure une exigence  
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_M2_030
+        
+** @req SDD_REQUIREMENT_TRACKING_M2_050
+
+  Le composant defini un element du composant avec le symbole '@'
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_M2_030
+        
+** @req SDD_REQUIREMENT_TRACKING_M2_060
+
+  Le composant defini un identifiant avec les symboles : @finalreq, @req et @initialreq
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_M2_030
+
+** @req SDD_REQUIREMENT_TRACKING_M2_070
+
+  Le composant defini les liste de dependance avec les symboles : @track, @depend
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_M2_030
+
+** @req SDD_REQUIREMENT_TRACKING_M2_070
+
+  Le composant defini la version avec @version, la description avec  @descritpion (mais non necessaire)
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_M2_030
+
+** @req SDD_REQUIREMENT_TRACKING_M2_080
+
+  Le composant defini l'etat par @state et les etat conventionnel : TODO,DEV,TEST,LIV,KO 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_M2_030
+
+** @req SDD_REQUIREMENT_TRACKING_M2_090
+
+  Le composant defini la criticité par @crit avec les valeurs conventionneles [MIN,MAJ,BLOQ] 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_M2_030
+        
+** @req SDD_REQUIREMENT_TRACKING_M2_100
+
+  Le composant defini le mode d'application par IADT avec le symbole @IADT et les valeurs I A D et T
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_M2_030
+
+
+
+

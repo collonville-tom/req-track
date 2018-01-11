@@ -1,0 +1,37 @@
+Requirement-Tracking-m2 Software Requirements Specification
+
+* Spécifications
+
+** @req SRS_REQUIREMENT_TRACKING_M2_010
+
+  Le composant fourni les capacités de modelisation des exigences necessaires aux analyses de tracabilité 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_005
+        
+** @req SRS_REQUIREMENT_TRACKING_M2_020
+
+  Le composant definit une exigence comme ayant un identifiant, une description, une liste de dependances et/ou une liste d'exigence tracées, une version, une criticité, un etat, et un IADT   
+  
+  Tout ces elements sont hormis l'identifiant la description et la version optionnel
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_005
+        
+** @req SRS_REQUIREMENT_TRACKING_M2_030
+
+  Le composant definit les symboles de la definition d'une exigence  
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_005
+        
+** @req SRS_REQUIREMENT_TRACKING_M2_040
+
+  Le composant definit via une api les moyens d'analyse de sources contenant des exigences  
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_005

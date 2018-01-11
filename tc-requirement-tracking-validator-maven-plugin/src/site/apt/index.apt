@@ -1,0 +1,3 @@
+Introduction
+
+   Composant maven pour extraire des fichiers des exigences et de generer dans le projets les rapports resultant apres la consultation des servcies RMI contenud dans equinox loader et plus particulierement des composants requirement-tracking

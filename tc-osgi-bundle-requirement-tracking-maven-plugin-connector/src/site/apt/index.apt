@@ -1,0 +1,3 @@
+Introduction
+
+   Composant orchestrant les composants d'extraction pour fournir un service rmi a un plugin maven. Ce compsant modelise le processus d'extraction, de restructuration et d'analyse des exigences afin d'en preduire des rapports

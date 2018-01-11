@@ -1,0 +1,15 @@
+Requirement-Tracking-java-connector Software Design Description
+
+* Spécifications
+
+** @req SDD_REQUIREMENT_TRACKING_JAVA_CONNECTOR_010
+
+  Le composant implemente la classe abstraite AbstractRequirementBuilder pour extraire les exigences des fichiers java 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_JAVA_CONNECTOR_010
+        
+        * @depend SDD_REQUIREMENT_TRACKING_M2_040
+
+        

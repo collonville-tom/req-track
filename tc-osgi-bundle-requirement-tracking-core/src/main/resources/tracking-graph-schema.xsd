@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema
+	xmlns="http://collonville.thomas.fr/tc-osgi-bundle-requirement-tracking-core/config-file-schema"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+	targetNamespace="http://collonville.thomas.fr/tc-osgi-bundle-requirement-tracking-core/config-file-schema">
+
+	<xs:element name="TrackingGraph">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="xs:string" />
+				<xs:element name="nodes" type="NodeSet" />
+				<xs:element name="relations" type="RelationSet" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="HashSet">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="configFiles"
+				type="AbstractGraphElement" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="NodeSet">
+		<xs:complexContent>
+			<xs:extension base="HashSet">
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="RelationSet">
+		<xs:complexContent>
+			<xs:extension base="HashSet">
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="AbstractGraphElement">
+	</xs:complexType>
+
+	<xs:complexType name="AbstractNode">
+		<xs:complexContent>
+			<xs:extension base="AbstractGraphElement">
+					<xs:sequence>
+						<xs:element name="nodeName" type="xs:string" />
+					</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="DescriptionNode">
+		<xs:complexContent>
+			<xs:extension base="AbstractNode">
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="RequirementNode">
+		<xs:complexContent>
+			<xs:extension base="AbstractNode">
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="VersionNode">
+		<xs:complexContent>
+			<xs:extension base="AbstractNode">
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="AbstractRelationShip">
+		<xs:complexContent>
+			<xs:extension base="AbstractGraphElement">
+					<xs:sequence>
+						<xs:element name="in" type="AbstractNode" />
+						<xs:element name="out" type="AbstractNode" />
+					</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="TrackingRelation">
+		<xs:complexContent>
+			<xs:extension base="AbstractRelationShip">
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="DependencyRelation">
+		<xs:complexContent>
+			<xs:extension base="AbstractRelationShip">
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="BasicRelation">
+		<xs:complexContent>
+			<xs:extension base="AbstractRelationShip">
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+
+
+</xs:schema>

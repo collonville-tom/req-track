@@ -1,0 +1,39 @@
+Requirement-Tracking  Software Design Description
+
+=====================
+
+[model/Req Track Component Diagram.jpg] Composant Requirement Tracking
+        
+* Liste des composant principales
+
+** @req SDD_REQUIREMENT_TRACKING_010
+
+  Il existe un composant contenant le metamodele des exigences 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_005
+        
+** @req SDD_REQUIREMENT_TRACKING_020
+
+  Il existe un composant contenant un connecteur apt 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_020
+        
+** @req SDD_REQUIREMENT_TRACKING_030
+
+  Il existe un composant contenant un connecteur java
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_030
+
+** @req SDD_REQUIREMENT_TRACKING_040
+
+  Il existe un composant contenant un modele d'analyse de grapghe contenant les elements parties prenantes des exigences (relations, nom, versio, etc.) 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_010, SRS_REQUIREMENT_TRACKING_050, SRS_REQUIREMENT_TRACKING_060, SRS_REQUIREMENT_TRACKING_070, SRS_REQUIREMENT_TRACKING_080, SRS_REQUIREMENT_TRACKING_090

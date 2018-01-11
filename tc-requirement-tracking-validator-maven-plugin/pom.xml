@@ -1,0 +1,73 @@
+<project xmlns="htt/p://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.tc.maven.plugin.requirement.validator</groupId>
+	<artifactId>tc-requirement-tracking-validator-maven-plugin</artifactId>
+	<name>${project.artifactId}-${project.version}</name>
+	<version>0.1.0${snapshot}</version>
+	<packaging>maven-plugin</packaging>
+
+    <properties>
+        <utils.version>0.2.7</utils.version>
+        <rt-maven-plug-connector.version>0.1.0</rt-maven-plug-connector.version>
+        <rt-repport.version>0.1.0</rt-repport.version>
+        <rt-apt-connector.version>0.1.0</rt-apt-connector.version>
+        <snapshot>-SNAPSHOT</snapshot>
+    </properties>
+
+    <!-- ce composant ce doit peut etre pas heriter de tc-osgi-* ce qui simplifierai sa construction 
+	surtout qu'au final il n'a aucune chance d'etre un jour loader dans equinox mais seulement utiliser dans un build maven --> 
+
+	<parent>
+		<groupId>org.tc</groupId>
+		<artifactId>tc-maven-plugin-parent</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
+		<relativePath>../../tc-maven-plugin-parent</relativePath>
+	</parent>
+
+ 
+
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.10</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugin-tools</groupId>
+			<artifactId>maven-plugin-annotations</artifactId>
+			<version>3.3</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-plugin-api</artifactId>
+			<version>3.2.3</version>
+		</dependency>
+        <!-- arf probleme! -->
+		<dependency>
+			<groupId>org.tc.osgi.bundle</groupId>
+			<artifactId>tc-osgi-bundle-utils</artifactId>
+			<version>${utils.version}${snapshot}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.tc.osgi.bundle</groupId>
+			<artifactId>tc-osgi-bundle-requirement-tracking-maven-plugin-connector</artifactId>
+			<version>${rt-maven-plug-connector.version}${snapshot}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.tc.osgi.bundle</groupId>
+			<artifactId>tc-osgi-bundle-requirement-tracking-repport</artifactId>
+			<version>${rt-repport.version}${snapshot}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.tc.osgi.bundle</groupId>
+			<artifactId>tc-osgi-bundle-requirement-tracking-apt-connector</artifactId>
+			<version>${rt-apt-connector.version}${snapshot}</version>
+		</dependency>
+	</dependencies>
+
+
+</project>

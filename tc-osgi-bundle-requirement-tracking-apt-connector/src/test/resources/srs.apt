@@ -1,0 +1,53 @@
+MorphMath-core Specification @version 0.1.1
+
+* Basic
+
+** @req SRS_BUNDLE_MORPHMATH_CORE_010
+
+  Le bundle fourni la primitive pour effectuer l'operations de base de morphologie mathematique qu'est la dilation
+  
+        * @version 0.0.1
+        
+        * @track SRS_BUNDLE_MORPHMATH_010
+        
+** @req SRS_BUNDLE_MORPHMATH_CORE_015
+
+  Le bundle fourni la primitive pour effectuer l'operations de base de morphologie mathematique qu'est l'erosion
+  
+        * @version 0.0.1
+        
+        * @track SRS_BUNDLE_MORPHMATH_010
+
+* Complexe
+  
+** @req SRS_BUNDLE_MORPHMATH_CORE_020
+
+  Le bundle fourni la primitive pour effectuer l'operations de base de morphologie mathematique qu'est la fermeture
+  
+        * @version 0.0.2
+        
+        * @track SRS_BUNDLE_MORPHMATH_010
+  
+** @req SRS_BUNDLE_MORPHMATH_CORE_030
+
+  Le bundle fourni la primitive pour effectuer l'operations de base de morphologie mathematique qu'est le gradient 
+  
+        * @version 0.0.2
+        
+        * @track SRS_BUNDLE_MORPHMATH_010
+        
+** @req SRS_BUNDLE_MORPHMATH_CORE_040
+
+  Le bundle fourni la primitive pour effectuer l'operations de base de morphologie mathematique qu'est l'ouverture
+  
+        * @version 0.0.2
+        
+        * @track SRS_BUNDLE_MORPHMATH_010
+        
+** @req SRS_BUNDLE_MORPHMATH_CORE_050
+
+  Le bundle fourni utilise les fonctions de base de utils pour logger son activité et externaliser ses parametres de configuration
+  
+        * @version 0.1.0
+        
+        * @track SRS_BUNDLE_MORPHMATH_010

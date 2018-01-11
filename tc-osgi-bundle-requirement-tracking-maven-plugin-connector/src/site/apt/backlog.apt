@@ -1,0 +1,21 @@
+Backlog
+
+* attentes
+
+		* Mettre a jour documentation SRS
+		
+		* Mettre a jour documentation SDD
+		
+		* Mettre a jour documentation STP
+		
+		* Mettre a jour documentation index
+
+		* revoir nomage des données membres de la classe MavenPluginRPCServer
+
+		* revoir le pattern de construction du webservice, le server ne doit pas etre initialisé dans le WS
+		
+* acceptes
+
+* refuses
+
+* historique

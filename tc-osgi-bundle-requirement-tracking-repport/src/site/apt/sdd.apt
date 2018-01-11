@@ -1,0 +1,50 @@
+Requirement-tracking-maven-site Software Design Description
+
+* Spécifications
+
+** @req SDD_REQUIREMENT_TRACKING_MAVEN_SITE_010
+
+  Le composant permet la generation des differents rapports issue de l'analyse des exigences via un visiteur produisant une serialisation xml du graphe d'analyse
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_MAVEN_SITE_010, SRS_REQUIREMENT_SITE_MAVEN_SITE_020
+        
+** @req SDD_REQUIREMENT_TRACKING_MAVEN_SITE_020
+
+  Le composant permet la generation des rapports sous format apt via une transformation xslt 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_MAVEN_SITE_020
+        
+        * @depend SDD_REQUIREMENT_TRACKING_MAVEN_SITE_010
+
+** @req SDD_REQUIREMENT_TRACKING_MAVEN_SITE_030
+
+  Le composant permet la generation des rapports sous format html via une transformation xslt 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_MAVEN_SITE_020
+
+        * @depend SDD_REQUIREMENT_TRACKING_MAVEN_SITE_010       
+
+** @req SDD_REQUIREMENT_TRACKING_MAVEN_SITE_040
+
+  Le composant permet la generation des rapports sous format latex via une transformation xslt 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_MAVEN_SITE_020
+        
+        * @depend SDD_REQUIREMENT_TRACKING_MAVEN_SITE_010
+        
+** @req SDD_REQUIREMENT_TRACKING_MAVEN_SITE_050
+
+  Le composant permet la generation d'un graphe basé graphviz 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_MAVEN_SITE_040
+        

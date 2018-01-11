@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ConfigurationLibrary
+	xmlns="http://collonville.thomas.fr/tc-osgi-bundle-utils/config-file-schema">
+	<configFiles>
+		<defaultValue>tc-osgi-bundle-apt-io</defaultValue>
+		<valueType>java.lang.String</valueType>
+		<fieldName>aptIoDependencyBundleName</fieldName>
+		<className>org.tc.osgi.bundle.requirement.tracking.apt.connector.module.tracker.AptIoServiceTracker</className>
+	</configFiles>
+	<configFiles>
+		<defaultValue>tc-osgi-bundle-requirement-tracking-m2</defaultValue>
+		<valueType>java.lang.String</valueType>
+		<fieldName>m2ReqDependencyBundleName</fieldName>
+		<className>org.tc.osgi.bundle.requirement.tracking.apt.connector.module.tracker.M2ReqServiceTracker</className>
+	</configFiles>
+</ConfigurationLibrary>
+
+

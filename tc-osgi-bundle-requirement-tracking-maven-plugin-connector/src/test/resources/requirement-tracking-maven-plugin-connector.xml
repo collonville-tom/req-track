@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ConfigurationLibrary
+	xmlns="http://collonville.thomas.fr/tc-osgi-bundle-utils/config-file-schema">
+	<configFiles>
+		<defaultValue>24681</defaultValue>
+		<valueType>java.lang.String</valueType>
+		<fieldName>rmiPort</fieldName>
+		<className>org.tc.osgi.bundle.requirement.tracking.maven.plugin.connector.conf.MavenPluginConnectorPropertyFileTest</className>
+	</configFiles>
+</ConfigurationLibrary>

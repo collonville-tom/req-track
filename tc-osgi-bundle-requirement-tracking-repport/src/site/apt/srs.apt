@@ -1,0 +1,27 @@
+Requirement-Tracking-maven-site Software Requirements Specification
+
+* Spécifications
+
+** @req SRS_REQUIREMENT_TRACKING_MAVEN_SITE_010
+
+  Le composant permet la generation des differents rapport issue de l'analyse des exigences 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_010, SRS_REQUIREMENT_TRACKING_050, SRS_REQUIREMENT_TRACKING_060, SRS_REQUIREMENT_TRACKING_070, SRS_REQUIREMENT_TRACKING_080, SRS_REQUIREMENT_TRACKING_090
+        
+** @req SRS_REQUIREMENT_TRACKING_MAVEN_SITE_020
+
+  Le composant permet la generation des rapports sous format xml, apt, html, latex 
+  
+        * @version 0.1.0
+        
+        * @depend SRS_REQUIREMENT_TRACKING_MAVEN_SITE_010
+    
+** @req SRS_REQUIREMENT_TRACKING_MAVEN_SITE_030
+
+  Le composant permet la generation d'un graphe des exigences 
+  
+        * @version 0.1.0
+        
+        * @track SRS_REQUIREMENT_TRACKING_040, SRS_REQUIREMENT_TRACKING_090
