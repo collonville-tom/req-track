@@ -2,6 +2,8 @@ Introduction
 
   Requierement Tracking est un composant fournissant les moyens de suivi d'exigences sur des projets et transverse a ces projets sur des type de documents varié de type apt ou code. TC-OSGI definit un ensemble de composants java 7 osgi pour traiter les exigences des projets et fournir des rapports.
 
+Le mot clef track suffit a l'utilisation dans la doc car ce sont les types mis en relation qui definissent finalement le type de relation tel que:
+
   all depend in
 
   SRS define SRS 
