@@ -21,6 +21,8 @@ Backlog
 		* 0.1.0 une fois les exigences empiler, il peut etre bien de les trimer pour supprimer les elements redondant
 		
 		* 0.1.0 mettre log dans le composant core
+
+		* voir si les annotation ne peuvent pas etre quand meme explooité pour la documentation (cf req-track)
 		
 		* 0.1.0 prevoir uyn xslt pour exposer les resutats de traitement de req-tracking
 		
