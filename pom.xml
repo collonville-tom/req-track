@@ -4,18 +4,18 @@
   <artifactId>tc-requirement-tracking-module</artifactId>
   <name>${project.artifactId}-${project.version}</name>
   <packaging>pom</packaging>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.11.0-SNAPSHOT</version>
   
   <parent>
     <groupId>org.tc.parent</groupId>
     <artifactId>tc-parent</artifactId>
-    <version>0.7.0-SNAPSHOT</version>
+    <version>0.11.0-SNAPSHOT</version>
   </parent>
 
   <modules>
   	<module>tc-osgi-bundle-requirement-tracking-m2</module>
   	<module>tc-osgi-bundle-requirement-tracking-core</module>
-<!--   	<module>tc-osgi-bundle-requirement-tracking-java-connector</module> -->
+   	<module>tc-osgi-bundle-requirement-tracking-java-connector</module> 
   	<module>tc-osgi-bundle-requirement-tracking-apt-connector</module>
   	<module>tc-osgi-bundle-requirement-tracking-repport</module>
   	<module>tc-osgi-bundle-requirement-tracking-maven-plugin-connector</module>

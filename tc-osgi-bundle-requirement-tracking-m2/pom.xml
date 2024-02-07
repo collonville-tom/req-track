@@ -1,24 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.tc.osgi.bundle</groupId>
+	<groupId>org.tc.osgi.bundle.requirement.tracking</groupId>
 	<artifactId>tc-osgi-bundle-requirement-tracking-m2</artifactId>
 	<name>${project.artifactId}-${project.version}</name>
 	<packaging>bundle</packaging>
 			<version>${build}${snapshot}</version>
 
 	<properties>
-		<build>0.1.0</build>
-        <utils.version>0.2.7</utils.version>
-        <equinox-loader.version>0.1.7</equinox-loader.version>
+		<build>0.11.0</build>
+        <utils.interfaces.version>0.11.0</utils.interfaces.version>
         <snapshot>-SNAPSHOT</snapshot>
 	</properties>
 
 	<parent>
-		<groupId>org.tc</groupId>
-		<artifactId>tc-osgi-requirement-tracking</artifactId>
-		<version>0.1.0-SNAPSHOT</version>
-		<relativePath>../pom.xml</relativePath>
+		<groupId>org.tc.parent</groupId>
+		<artifactId>tc-osgi-parent</artifactId>
+		<version>0.11.0-SNAPSHOT</version>
 	</parent>
 
 	<build>
@@ -29,93 +27,25 @@
 				<configuration>
 					<archive>
 						<manifestFile>${project.build.outputDirectory}/META-INF/MANIFEST.MF</manifestFile>
-						<manifest>
-							<addClasspath>true</addClasspath>
-							<classpathPrefix>./</classpathPrefix>
-						</manifest>
-						<manifestEntries>
-							<Class-Path>./ ./${project.artifactId}-${project.version}/</Class-Path>
-						</manifestEntries>
 					</archive>
 				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-bundle-plugin</artifactId>
-				<version>2.3.7</version>
-				<extensions>true</extensions>
 				<configuration>
 					<instructions>
-						<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
-						<Bundle-Name>${project.name}</Bundle-Name>
-						<Bundle-Version>${project.version}</Bundle-Version>
-						<Bundle-Vendor>TC</Bundle-Vendor>
 						<Bundle-Activator>org.tc.osgi.bundle.requirement.tracking.m2.module.activator.M2ReqTrackingActivator</Bundle-Activator>
 					</instructions>
 				</configuration>
-				<executions>
-					<execution>
-						<id>bundle-manifest</id>
-						<phase>process-classes</phase>
-						<goals>
-							<goal>manifest</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 			<plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<executions>
-					<!-- Packaging debian -->
-					<execution>
-						<id>assembly-debian</id>
-						<phase>prepare-package</phase>
-						<goals>
-							<goal>single</goal>
-						</goals>
-						<configuration>
-							<appendAssemblyId>false</appendAssemblyId>
-							<descriptors>
-								<descriptor>src/main/assembly/assembly-debian.xml</descriptor>
-							</descriptors>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<!-- Donne les droit et création du .deb -->
-				<!-- Finir le package debian pour le composant utils -->
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-antrun-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>packaging-debian</id>
-						<phase>package</phase>
-						<configuration>
-							<tasks>
-								<exec dir="." executable="bash" osfamily="unix">
-									<arg
-										line='-c "chmod 755 ${project.build.directory}/${project.artifactId}-${project.version}/DEBIAN/*"' />
-								</exec>
-								<!-- ***************************************************************************** -->
-								<!-- !! On crée les .DEB !! -->
-								<exec dir="." executable="bash" osfamily="unix">
-									<arg
-										line='-c "dpkg-deb --build ${project.build.directory}/${project.artifactId}-${project.version} ./target"' />
-								</exec>
-								<!-- !! On crée les .DEB !! -->
-								<exec dir="." executable="bash" osfamily="unix">
-									<arg
-										line='-c "cd ${project.build.directory}/${project.artifactId}-${project.version}/opt/equinox-loader; tar -caf ${project.build.directory}/${project.artifactId}-${project.version}.tar.gz bundles"' />
-								</exec>
-
-							</tasks>
-						</configuration>
-						<goals>
-							<goal>run</goal>
-						</goals>
-					</execution>
-				</executions>
+				<artifactId>maven-assembly-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<artifactId>jdeb</artifactId>
+				<groupId>org.vafer</groupId>
 			</plugin>
 		</plugins>
 	</build>
@@ -124,23 +54,15 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.10</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.tc.osgi.bundle</groupId>
-			<artifactId>tc-osgi-bundle-utils</artifactId>
-			<version>${utils.version}${snapshot}</version>
+			<groupId>org.tc.osgi.bundle.utils</groupId>
+			<artifactId>tc-osgi-bundle-utils-interfaces</artifactId>
+			<version>${utils.interfaces.version}${snapshot}</version>
 			<classifier>assembly</classifier>
-			<type>bundle</type>
-			<scope>compile</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.tc.osgi.bundle</groupId>
-			<artifactId>tc-osgi-bundle-utils</artifactId>
-			<version>${utils.version}${snapshot}</version>
-			<scope>test</scope>
-		</dependency>
+
 	</dependencies>
 
 
